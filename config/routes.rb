@@ -5,5 +5,6 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :products
+  root 'api/v1/categories#index', defaults: {format: :json}
+  # resources :products
 end
